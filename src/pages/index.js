@@ -2,21 +2,52 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const IndexPage = ({data}) => {
+  const Post = post => {
+    const { frontmatter, excerpt } = post.node
+    return (
+      <div
+          style={{marginBottom: "2rem"}}
+          key={frontmatter.path}
+      >
+        <Link
+          to={frontmatter.path}
+        >
+            <h3 style={{marginBottom: "0px"}}>{frontmatter.title}</h3>
+            <span style={{color: "#666", fontSize: "16px", marginBottom: "0.5rem"}}>{frontmatter.date}</span>
+            <p>{excerpt} <span style={{color: 'cornflowerblue'}}>read more →</span></p>
+        </Link>
+
+      </div>
+    )
+  }
+  
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h2 style={{fontSize: "16px", marginBottom: "3rem"}}>Eldritch musings and arcane intellects from the spiraling minds of two would-be wizards.</h2>
+      {data.allMarkdownRemark.edges.map(Post)}
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(limit:20, sort: {fields: [frontmatter___path], order: DESC}) {
+      edges {
+        node {
+          excerpt(pruneLength: 280)
+          frontmatter {
+            title
+            path
+            date
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
