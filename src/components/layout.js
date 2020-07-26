@@ -1,9 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import favicon from '../images/favicon.gif'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,6 +20,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
