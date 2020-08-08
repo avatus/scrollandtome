@@ -5,6 +5,14 @@ module.exports = {
     author: `@michaelzmyers`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        trackingId: "UA-174250715-1",
+        anonymize: true,
+        head: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,10 +31,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-page-progress",
       options: {
-        trackingId: "UA-174250715-1",
-      },
+        height: 2,
+        prependToBody: false,
+        color: `#29b6f6`,
+        footerHeight: 500,
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
