@@ -1,7 +1,8 @@
 ---
 path: '/well-met'
 title: 'Well met!'
-date: "July 24th, 2020"
+date: "2020-07-24"
+date_formatted: "July 24th, 2020"
 ---
 Welcome, adventurers!
 

@@ -1,7 +1,8 @@
 ---
 path: '/ttrpg-progression-systems'
 title: 'Vertical vs Horizontal Progression'
-date: "August 8th, 2020"
+date: "2020-08-08"
+date_formatted: "August 8th, 2020"
 ---
 
 One of the most important topics of game design (to me) when it comes to TTRPGs is progression. How do my player's characters progress in the game. How do they get "stronger"? This decision can have wildly different effects on the feel of the game. There are a ton of different systems out there but I like to try to boil them down into two categories: Vertical and Horizontal. 
@@ -11,6 +12,7 @@ These categories are not binary, more of a spectrum. All games I've played seem 
 Quick preface - this is me rambling about what *I think* all this stuff means. If there are strict definitions elsewhere, or I'm completely off the mark, I apologize. Just spewing nonsense here.
 
 **Vertical Progression**
+
 Vertical progression is when a player "levels up", or in some way grows stronger and more powerful overtime. A great example would be an MMORPG such as World of Warcraft. You start at level 1 with a basic staff, smacking bats in a cave. Then, eventually, you reach max level and summon meteors from the heavens to destroy your universe-ending villains.  Dungeons & Dragons has a similar vibe. You start your game with a sword and shield, worried that a stray arrow from the group of goblins you're fighting can end your adventure at any moment. After a few sessions , you're slinging Fireballs, dealing huge 8D6 damage to all enemies caught in your blast. You're catching arrows midair and throwing them back at your enemies faster than they were shot from the bow. 
 
 The point of vertical progression is to constantly get stronger and more specialized. You start as a simple mage, growing into an Archwizard capable of controlling time and pulling at the fabric of the weave to make anything you wish come true (quite literally with the Wish spell). This adds a *very* clear path for your players with very tangible goals. Leveling up is a great motivator to continue the story/adventure because the players know, no matter what happens, they will be closer to their next goal, spell, ability, etc.
@@ -22,6 +24,7 @@ The other side of this "always gaining power" coin is that, once you have outgro
 Perhaps this is for the best. We all know that campaigns very rarely reach their end goal or have an actual satisfying finish. Maybe it's good to have a story that you progress through until the BBEG, defeat the enemy, and call it a day - start over in a new campaign. 
 
 **Horizontal Progress**
+
 So, this one is a bit more nebulous to describe but I'll do my best. Horizontal progression is when your character doesn't necessarily get *stronger* but instead, more *capable*. An example of this would be a Metroidvania type game. Sure, you may gain some more health or a stronger weapon along the way, but normally your 'power ups' are things to let you move around the world more freely, or deal specific damage to a certain creature. The MMORPG Guild Wars 2 has a mix of these. There is definitely a level system, and you want to reach max level to do the main content of the game. However, the game has had 2 (3?) expansions now where the level does not increase. The expansions, rather than adding higher levels and more deadly enemies, adds new systems to progress your character through. An example would be the ability to glide on air currents. Most content can be traveled to without a glider, but the glider in most cases makes it easier to reach and, in some *other* cases, able to reach exclusive areas. 
 
 I can't really think of an example of this in a TTRPG but please let me know if you've seen this!
@@ -33,6 +36,7 @@ I like this system the most. I do think it's harder to design for. Number tuning
 The negative to this system is its very player driven. The players have to kind of set their own goals on what they want to accomplish. This can be hard for DMs who have players that are just kind of there to play through a story rather than crafting their own. A west marches style campaign fits this design well (albeit still wrapped in a vertical system such as D&D) because it allows the players to pick their goals and create their own adventure. Also, having a more open world might have players feeling lost if they don't know what to expect from each area. Lastly, vertical progression allows you to hyper-specialize in really cool things, unlocking amazing spells or abilities. Horizontal usually leads to more 'Jack-of-all-Trades" type of characters. This is normally preference but it can be hard to find a group that has all the same preference. 
 
 **Reward System**
+
 The reason why I think this is such a big deal when it comes to designing an RPG is because it defines the reward system, which in turn, informs the players decisions. If the best way to gain experience in a game is to fight monsters, then the game is normally designed around becoming better at fighting monsters. If you haven't noticed, most of 5th Edition Dungeons & Dragons spells, abilities, and classes are almost always revolved around becoming better in combat. More damage, more spells, more enemies to be hit at once. A lot of people love this. They just want to roll dice, kill monsters, and get loot. I think it's super fun to play this way.
 
 Dungeons & Dragons touts "The Three Pillars" of progression. Combat, Social, and Exploration. However it seems that most of the Player's Handbook is focused around "how to kill enemies better". For instance, there isn't a "Book of Exploration", but they do have an entire 'Monster Manual". I know, I'm generalizing a lot of the content found in these books, but you get the idea. The Dungeon Master's Guide has some cool chapters on how to do exploration and handle social encounter but definitely not an entire book on these. There are many class features and spells that are not combat focused, but those seem to be mostly perks or afterthoughts. 

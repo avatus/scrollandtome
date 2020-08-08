@@ -12,9 +12,11 @@ export default function Template({
     const { markdownRemark: post } = data
     return (
         <Layout>
-            <SEO title={post.frontmatter.title} />
+            <SEO 
+                title={post.frontmatter.title} 
+            />
             <h1 style={{fontSize: "1.5rem", marginBottom: "0px"}}>{post.frontmatter.title}</h1>
-            <p style={{color: "#666"}}>{post.frontmatter.date}</p>
+            <p style={{color: "#666"}}>{post.frontmatter.date_formatted}</p>
             <div dangerouslySetInnerHTML={{__html: post.html}} />
             <div
                 style={{
@@ -58,6 +60,7 @@ export const postQuery = graphql`
                 path
                 title
                 date
+                date_formatted
             }
         }
     }

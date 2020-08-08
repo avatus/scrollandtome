@@ -16,7 +16,7 @@ const IndexPage = ({data}) => {
           to={frontmatter.path}
         >
             <h3 style={{marginBottom: "0px"}}>{frontmatter.title}</h3>
-            <span style={{color: "#666", fontSize: "16px", marginBottom: "0.5rem"}}>{frontmatter.date}</span>
+            <span style={{color: "#666", fontSize: "16px", marginBottom: "0.5rem"}}>{frontmatter.date_formatted}</span>
             <p>{excerpt} <span style={{color: 'cornflowerblue'}}>read more →</span></p>
         </Link>
 
@@ -35,7 +35,7 @@ const IndexPage = ({data}) => {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(limit:20, sort: {fields: [frontmatter___path], order: DESC}) {
+    allMarkdownRemark(limit:20, sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           excerpt(pruneLength: 280)
@@ -43,6 +43,7 @@ export const pageQuery = graphql`
             title
             path
             date
+            date_formatted
           }
         }
       }

@@ -518,6 +518,7 @@ b {
 }
 strong {
   font-weight: bold;
+  color: #7e57c2;
 }
 dt {
   font-weight: bold;
@@ -632,6 +633,18 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+em {
+  color: #BBBBBB;
+}
+
+blockquote {
+  border-left: 2px solid #5c6bc0;
+  margin: 0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #292929;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
