@@ -36,7 +36,7 @@ module.exports = {
         height: 2,
         prependToBody: false,
         color: `#29b6f6`,
-        footerHeight: 500,
+        footerHeight: 50,
       }
     },
     {
