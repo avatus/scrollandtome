@@ -16,7 +16,7 @@ export default function Template({
                 title={post.frontmatter.title} 
             />
             <h1 style={{fontSize: "1.5rem", marginBottom: "0px"}}>{post.frontmatter.title}</h1>
-            <p style={{color: "#666"}}>{post.frontmatter.date_formatted}</p>
+            <p style={{color: "#666"}}>{post.frontmatter.date_formatted} - <span>{post.frontmatter.author}</span></p>
             <div dangerouslySetInnerHTML={{__html: post.html}} />
             <div
                 style={{
@@ -61,6 +61,7 @@ export const postQuery = graphql`
                 title
                 date
                 date_formatted
+                author
             }
         }
     }

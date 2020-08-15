@@ -18,6 +18,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
                         title
                         date
                         date_formatted
+                        author
                     }
                 }
             }

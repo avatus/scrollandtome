@@ -16,7 +16,9 @@ const IndexPage = ({data}) => {
           to={frontmatter.path}
         >
             <h3 style={{marginBottom: "0px"}}>{frontmatter.title}</h3>
-            <span style={{color: "#666", fontSize: "16px", marginBottom: "0.5rem"}}>{frontmatter.date_formatted}</span>
+            <span style={{color: "#666", fontSize: "16px", marginBottom: "0.5rem"}}>
+              {`${frontmatter.date_formatted}`}
+            </span>
             <p>{excerpt} <span style={{color: 'cornflowerblue'}}>read more →</span></p>
         </Link>
 
@@ -44,6 +46,7 @@ export const pageQuery = graphql`
             path
             date
             date_formatted
+            author
           }
         }
       }

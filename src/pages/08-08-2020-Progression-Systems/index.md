@@ -3,6 +3,7 @@ path: '/ttrpg-progression-systems'
 title: 'Vertical vs Horizontal Progression'
 date: "2020-08-08"
 date_formatted: "August 8th, 2020"
+author: "Michael"
 ---
 
 One of the most important topics of game design (to me) when it comes to TTRPGs is progression. How do my player's characters progress in the game. How do they get "stronger"? This decision can have wildly different effects on the feel of the game. There are a ton of different systems out there but I like to try to boil them down into two categories: Vertical and Horizontal. 
